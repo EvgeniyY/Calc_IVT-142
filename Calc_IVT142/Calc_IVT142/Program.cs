@@ -12,6 +12,7 @@ namespace Calc_IVT142
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+        
         static void Main()
         {
             Application.EnableVisualStyles();

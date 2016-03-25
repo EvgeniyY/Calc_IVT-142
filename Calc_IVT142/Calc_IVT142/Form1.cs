@@ -16,5 +16,41 @@ namespace Calc_IVT142
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double firstArg=Convert.ToDouble(Input1.Text);
+            double secondArg = Convert.ToDouble(Input2.Text);
+            double result = firstArg + secondArg;
+            
+            Output.Text = result.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(Input1.Text);
+            double secondArg = Convert.ToDouble(Input2.Text);
+            double result = firstArg - secondArg;
+
+            Output.Text = result.ToString();
+        }
+
+        private void Multiply_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(Input1.Text);
+            double secondArg = Convert.ToDouble(Input2.Text);
+            double result = firstArg * secondArg;
+
+            Output.Text = result.ToString();
+        }
+
+        private void Divide_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(Input1.Text);
+            double secondArg = Convert.ToDouble(Input2.Text);
+            double result = firstArg / secondArg;
+
+            Output.Text = result.ToString();
+        }
     }
 }
