@@ -23,23 +23,8 @@ namespace Calc_IVT142
             double firstArg = Convert.ToDouble(Input1.Text);
             double secondArg = Convert.ToDouble(Input2.Text);
             double result;
-            switch (((Button) sender).Name)
-            {
-                case "Add":
-                    result = firstArg + secondArg;
-                    break;
-                case "Multiply":
-                    result = firstArg * secondArg;
-                    break;
-                case "Substract":
-                    result = firstArg-secondArg;
-                    break;
-                case "Divide":
-                    result = firstArg/secondArg;
-                    break;
-                default: 
-                    throw new Exception("Неизвестная операция");
-            }
+            ICalculator calculator = Fabric.CreateCalculator(((Button) sender).Name);
+            result = calculator.Calculate(firstArg, secondArg);
             Output.Text = result.ToString();
         }
     }
