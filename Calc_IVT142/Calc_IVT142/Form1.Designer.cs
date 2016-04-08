@@ -35,6 +35,10 @@
             this.Substract = new System.Windows.Forms.Button();
             this.Multiply = new System.Windows.Forms.Button();
             this.Divide = new System.Windows.Forms.Button();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Ln = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Squared = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Input1
@@ -42,7 +46,7 @@
             this.Input1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Input1.Location = new System.Drawing.Point(12, 39);
             this.Input1.Name = "Input1";
-            this.Input1.Size = new System.Drawing.Size(118, 20);
+            this.Input1.Size = new System.Drawing.Size(125, 20);
             this.Input1.TabIndex = 0;
             // 
             // Input2
@@ -67,9 +71,9 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(30, 86);
+            this.Add.Location = new System.Drawing.Point(12, 86);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(75, 23);
+            this.Add.Size = new System.Drawing.Size(60, 23);
             this.Add.TabIndex = 3;
             this.Add.Text = "+";
             this.Add.UseVisualStyleBackColor = true;
@@ -77,9 +81,9 @@
             // 
             // Substract
             // 
-            this.Substract.Location = new System.Drawing.Point(175, 86);
+            this.Substract.Location = new System.Drawing.Point(78, 86);
             this.Substract.Name = "Substract";
-            this.Substract.Size = new System.Drawing.Size(75, 23);
+            this.Substract.Size = new System.Drawing.Size(59, 23);
             this.Substract.TabIndex = 4;
             this.Substract.Text = "-";
             this.Substract.UseVisualStyleBackColor = true;
@@ -87,9 +91,9 @@
             // 
             // Multiply
             // 
-            this.Multiply.Location = new System.Drawing.Point(30, 128);
+            this.Multiply.Location = new System.Drawing.Point(12, 128);
             this.Multiply.Name = "Multiply";
-            this.Multiply.Size = new System.Drawing.Size(75, 23);
+            this.Multiply.Size = new System.Drawing.Size(59, 23);
             this.Multiply.TabIndex = 5;
             this.Multiply.Text = "*";
             this.Multiply.UseVisualStyleBackColor = true;
@@ -97,19 +101,60 @@
             // 
             // Divide
             // 
-            this.Divide.Location = new System.Drawing.Point(175, 128);
+            this.Divide.Location = new System.Drawing.Point(78, 128);
             this.Divide.Name = "Divide";
-            this.Divide.Size = new System.Drawing.Size(75, 23);
+            this.Divide.Size = new System.Drawing.Size(59, 23);
             this.Divide.TabIndex = 6;
             this.Divide.Text = "/";
             this.Divide.UseVisualStyleBackColor = true;
             this.Divide.Click += new System.EventHandler(this.Action);
+            // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(150, 86);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(59, 23);
+            this.Sin.TabIndex = 7;
+            this.Sin.Text = "sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            // 
+            // Ln
+            // 
+            this.Ln.Location = new System.Drawing.Point(150, 128);
+            this.Ln.Name = "Ln";
+            this.Ln.Size = new System.Drawing.Size(59, 23);
+            this.Ln.TabIndex = 8;
+            this.Ln.Text = "ln";
+            this.Ln.UseVisualStyleBackColor = true;
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(216, 86);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(59, 23);
+            this.Cos.TabIndex = 9;
+            this.Cos.Text = "cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            // 
+            // Squared
+            // 
+            this.Squared.Location = new System.Drawing.Point(216, 128);
+            this.Squared.Name = "Squared";
+            this.Squared.Size = new System.Drawing.Size(59, 23);
+            this.Squared.TabIndex = 10;
+            this.Squared.Text = "x^2";
+            this.Squared.UseVisualStyleBackColor = true;
+            this.Squared.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 262);
+            this.Controls.Add(this.Squared);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Ln);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.Divide);
             this.Controls.Add(this.Multiply);
             this.Controls.Add(this.Substract);
@@ -119,6 +164,7 @@
             this.Controls.Add(this.Input1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +179,10 @@
         private System.Windows.Forms.Button Substract;
         private System.Windows.Forms.Button Multiply;
         private System.Windows.Forms.Button Divide;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Ln;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Squared;
     }
 }
 

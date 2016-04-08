@@ -27,5 +27,15 @@ namespace Calc_IVT142
             result = calculator.Calculate(firstArg, secondArg);
             Output.Text = result.ToString();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
