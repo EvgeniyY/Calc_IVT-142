@@ -68,6 +68,7 @@
             this.Output.Size = new System.Drawing.Size(220, 43);
             this.Output.TabIndex = 2;
             this.Output.Text = "=";
+            this.Output.Click += new System.EventHandler(this.Output_Click);
             // 
             // Add
             // 
@@ -117,6 +118,7 @@
             this.Sin.TabIndex = 7;
             this.Sin.Text = "sin";
             this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.ActionOneArg);
             // 
             // Ln
             // 
@@ -126,6 +128,7 @@
             this.Ln.TabIndex = 8;
             this.Ln.Text = "ln";
             this.Ln.UseVisualStyleBackColor = true;
+            this.Ln.Click += new System.EventHandler(this.ActionOneArg);
             // 
             // Cos
             // 
@@ -135,6 +138,7 @@
             this.Cos.TabIndex = 9;
             this.Cos.Text = "cos";
             this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.ActionOneArg);
             // 
             // Squared
             // 
@@ -144,7 +148,7 @@
             this.Squared.TabIndex = 10;
             this.Squared.Text = "x^2";
             this.Squared.UseVisualStyleBackColor = true;
-            this.Squared.Click += new System.EventHandler(this.button4_Click);
+            this.Squared.Click += new System.EventHandler(this.ActionOneArg);
             // 
             // Form1
             // 
@@ -164,7 +168,6 @@
             this.Controls.Add(this.Input1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

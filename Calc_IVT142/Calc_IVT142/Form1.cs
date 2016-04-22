@@ -28,12 +28,16 @@ namespace Calc_IVT142
             Output.Text = result.ToString();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ActionOneArg(object sender, EventArgs e)
         {
-
+            double firstArg = Convert.ToDouble(Input1.Text);
+            double result;
+            ICalculateFunc calculator = FabricFunc.CreateCalculator(((Button)sender).Name);
+            result = calculator.CalculateFunc(firstArg);
+            Output.Text = result.ToString();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Output_Click(object sender, EventArgs e)
         {
 
         }

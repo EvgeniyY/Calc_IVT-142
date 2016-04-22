@@ -2,11 +2,12 @@
 
 namespace Calc_IVT142
 {
-    public class Ln
-    {
-        public double CalculateFunc(double first)
+
+        public class Ln : ICalculateFunc
         {
-            return Math.Log(first);
+            public double CalculateFunc(double first)
+            {
+                return Math.Log(first);
+            }
         }
     }
-}

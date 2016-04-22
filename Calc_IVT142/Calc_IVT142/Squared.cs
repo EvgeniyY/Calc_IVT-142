@@ -2,11 +2,11 @@
 
 namespace Calc_IVT142
 {
-    public class Squared
-    {
-        public double CalculateFunc(double first)
+        public class Squared : ICalculateFunc
         {
-            return Math.Pow(first, 2);
+            public double CalculateFunc(double first)
+            {
+                return Math.Pow(first, 2);
+            }
         }
     }
-}
