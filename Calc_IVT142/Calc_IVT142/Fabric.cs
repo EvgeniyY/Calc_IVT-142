@@ -16,6 +16,8 @@ namespace Calc_IVT142
                     return new Substract();
                 case "Divide":
                     return new Divide();
+                case "Log":
+                    return new Log();
                 default:
                     throw new Exception("Неизвестная операция");
             }

@@ -39,12 +39,20 @@
             this.Ln = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
             this.Squared = new System.Windows.Forms.Button();
+            this.Tan = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.Ctan = new System.Windows.Forms.Button();
+            this.Log = new System.Windows.Forms.Button();
+            this.Exp = new System.Windows.Forms.Button();
+            this.Acos = new System.Windows.Forms.Button();
+            this.Asin = new System.Windows.Forms.Button();
+            this.Factorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Input1
             // 
             this.Input1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Input1.Location = new System.Drawing.Point(12, 39);
+            this.Input1.Location = new System.Drawing.Point(33, 39);
             this.Input1.Name = "Input1";
             this.Input1.Size = new System.Drawing.Size(125, 20);
             this.Input1.TabIndex = 0;
@@ -52,7 +60,7 @@
             // Input2
             // 
             this.Input2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Input2.Location = new System.Drawing.Point(150, 39);
+            this.Input2.Location = new System.Drawing.Point(284, 39);
             this.Input2.Name = "Input2";
             this.Input2.Size = new System.Drawing.Size(125, 20);
             this.Input2.TabIndex = 1;
@@ -65,7 +73,7 @@
             this.Output.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Output.Location = new System.Drawing.Point(30, 196);
             this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(220, 43);
+            this.Output.Size = new System.Drawing.Size(410, 43);
             this.Output.TabIndex = 2;
             this.Output.Text = "=";
             this.Output.Click += new System.EventHandler(this.Output_Click);
@@ -150,11 +158,99 @@
             this.Squared.UseVisualStyleBackColor = true;
             this.Squared.Click += new System.EventHandler(this.ActionOneArg);
             // 
+            // Tan
+            // 
+            this.Tan.Location = new System.Drawing.Point(284, 86);
+            this.Tan.Name = "Tan";
+            this.Tan.Size = new System.Drawing.Size(59, 23);
+            this.Tan.TabIndex = 11;
+            this.Tan.Text = "Tan";
+            this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(284, 128);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(59, 23);
+            this.Sqrt.TabIndex = 12;
+            this.Sqrt.Text = "Sqrt";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Ctan
+            // 
+            this.Ctan.Location = new System.Drawing.Point(350, 86);
+            this.Ctan.Name = "Ctan";
+            this.Ctan.Size = new System.Drawing.Size(59, 23);
+            this.Ctan.TabIndex = 13;
+            this.Ctan.Text = "Ctan";
+            this.Ctan.UseVisualStyleBackColor = true;
+            this.Ctan.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Log
+            // 
+            this.Log.Location = new System.Drawing.Point(350, 128);
+            this.Log.Name = "Log";
+            this.Log.Size = new System.Drawing.Size(59, 23);
+            this.Log.TabIndex = 14;
+            this.Log.Text = "Log(a,b)";
+            this.Log.UseVisualStyleBackColor = true;
+            this.Log.Click += new System.EventHandler(this.Action);
+            // 
+            // Exp
+            // 
+            this.Exp.Location = new System.Drawing.Point(150, 170);
+            this.Exp.Name = "Exp";
+            this.Exp.Size = new System.Drawing.Size(59, 23);
+            this.Exp.TabIndex = 15;
+            this.Exp.Text = "Exp";
+            this.Exp.UseVisualStyleBackColor = true;
+            this.Exp.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Acos
+            // 
+            this.Acos.Location = new System.Drawing.Point(215, 170);
+            this.Acos.Name = "Acos";
+            this.Acos.Size = new System.Drawing.Size(59, 23);
+            this.Acos.TabIndex = 16;
+            this.Acos.Text = "Acos";
+            this.Acos.UseVisualStyleBackColor = true;
+            this.Acos.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Asin
+            // 
+            this.Asin.Location = new System.Drawing.Point(284, 170);
+            this.Asin.Name = "Asin";
+            this.Asin.Size = new System.Drawing.Size(59, 23);
+            this.Asin.TabIndex = 17;
+            this.Asin.Text = "Asin";
+            this.Asin.UseVisualStyleBackColor = true;
+            this.Asin.Click += new System.EventHandler(this.ActionOneArg);
+            // 
+            // Factorial
+            // 
+            this.Factorial.Location = new System.Drawing.Point(350, 170);
+            this.Factorial.Name = "Factorial";
+            this.Factorial.Size = new System.Drawing.Size(59, 23);
+            this.Factorial.TabIndex = 18;
+            this.Factorial.Text = "x!";
+            this.Factorial.UseVisualStyleBackColor = true;
+            this.Factorial.Click += new System.EventHandler(this.ActionOneArg);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 262);
+            this.ClientSize = new System.Drawing.Size(477, 262);
+            this.Controls.Add(this.Factorial);
+            this.Controls.Add(this.Asin);
+            this.Controls.Add(this.Acos);
+            this.Controls.Add(this.Exp);
+            this.Controls.Add(this.Log);
+            this.Controls.Add(this.Ctan);
+            this.Controls.Add(this.Sqrt);
+            this.Controls.Add(this.Tan);
             this.Controls.Add(this.Squared);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Ln);
@@ -186,6 +282,14 @@
         private System.Windows.Forms.Button Ln;
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Squared;
+        private System.Windows.Forms.Button Tan;
+        private System.Windows.Forms.Button Sqrt;
+        private System.Windows.Forms.Button Ctan;
+        private System.Windows.Forms.Button Log;
+        private System.Windows.Forms.Button Exp;
+        private System.Windows.Forms.Button Acos;
+        private System.Windows.Forms.Button Asin;
+        private System.Windows.Forms.Button Factorial;
     }
 }
 

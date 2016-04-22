@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_IVT142", "Calc_IVT142\Calc_IVT142.csproj", "{7BDE02C8-B39A-471E-801F-1419CE1B6F07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_IVT142.Tests", "Calc_IVT142.Tests\Calc_IVT142.Tests.csproj", "{0F0E2500-E913-4ADB-80FF-177298C0ED86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7BDE02C8-B39A-471E-801F-1419CE1B6F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BDE02C8-B39A-471E-801F-1419CE1B6F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BDE02C8-B39A-471E-801F-1419CE1B6F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0E2500-E913-4ADB-80FF-177298C0ED86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0E2500-E913-4ADB-80FF-177298C0ED86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0E2500-E913-4ADB-80FF-177298C0ED86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0E2500-E913-4ADB-80FF-177298C0ED86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
