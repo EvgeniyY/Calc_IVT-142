@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calc_IVT142
+namespace Calc_IVT142.TwoArg
 {
     public class Log : ICalculator
     {

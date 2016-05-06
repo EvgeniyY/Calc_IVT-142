@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace Calc_IVT142
+namespace Calc_IVT142.OneArg
 {
-
-        public class Ln : ICalculateFunc
+        public class Squared : ICalculateFunc
         {
             public double CalculateFunc(double first)
             {
-                return Math.Log(first);
+                return Math.Pow(first, 2);
             }
         }
     }
