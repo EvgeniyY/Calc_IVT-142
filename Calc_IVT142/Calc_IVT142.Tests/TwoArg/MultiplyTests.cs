@@ -7,12 +7,12 @@ namespace Calc_IVT142.Tests.TwoArg
     [TestFixture]
     public class MultiplyTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(33,10,330)]
+        public void MultiplyTest(double first, double second, double expected)
         {
             ICalculator calculator = new Multiply();
-            double result = calculator.Calculate(33, 10);
-            Assert.AreEqual(330,result);
+            double result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected,result);
         }
          
     }

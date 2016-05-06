@@ -7,13 +7,16 @@ namespace Calc_IVT142.Tests.TwoArg
     [TestFixture]
     public class DivideTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(333, 3, 111)]
+        [TestCase(-800, -10, 80)]
+        [TestCase(20, -0.5, -40)]
+        [TestCase(11, 3, 3.6666)]
+        public void DivideTest(double first, double second, double expected)
         {
-            double result;
             ICalculator calculator = new Divide();
-            result = calculator.Calculate(27, 3);
-            Assert.AreEqual(9,result);
+            var result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result, 0.0001);
+
         }
 
     }

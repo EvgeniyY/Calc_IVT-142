@@ -8,7 +8,7 @@ namespace Calc_IVT142.Tests.OneArg
     public class CosTests
     {
         [Test]
-        public void SimpleTest()
+        public void CosTest()
         {
             ICalculateFunc calculateFunc = new Cos();
             double result = calculateFunc.CalculateFunc(0.5);

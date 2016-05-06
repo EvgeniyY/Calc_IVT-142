@@ -6,13 +6,15 @@ namespace Calc_IVT142.Tests.TwoArg
     [TestFixture]
     public class AddTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(2, 3, 5)]
+        [TestCase(-100, 0, -100)]
+        [TestCase(256, 128, 384)]
+        [TestCase(-5, -5, -10)]
+        public void AddTest(double first, double second, double expected)
         {
-            double result;
             ICalculator calculator = new Add();
-            result = calculator.Calculate(2, 2);
-            Assert.AreEqual(4,result);
+            var result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
     }
 }

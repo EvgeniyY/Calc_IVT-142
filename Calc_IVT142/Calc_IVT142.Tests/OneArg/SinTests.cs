@@ -7,7 +7,7 @@ namespace Calc_IVT142.Tests.OneArg
     public class SinTests
     {
         [Test]
-        public void SimpleTests()
+        public void SinTest()
         {
             ICalculateFunc calculateFunc = new Sin();
             double result = calculateFunc.CalculateFunc(0.5);
