@@ -2,8 +2,20 @@
 
 namespace Calc_IVT142.OneArg
 {
+    /// <summary>
+    /// Фабрика для одного аргумента
+    /// </summary>
     public static class OneArgumentCalculatorsFactory
     {
+        /// <summary>
+        /// Создание калькулятора.
+        /// </summary>
+        /// <param name="name">
+        /// Имя калькулятора.
+        /// </param>
+        /// <returns>
+        /// Создание нужного калькулятора.
+        /// </returns>
         public static ICalculateFunc CreateCalculator(string name)
         {
             switch (name)

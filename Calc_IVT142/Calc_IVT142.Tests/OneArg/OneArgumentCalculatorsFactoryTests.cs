@@ -21,6 +21,6 @@ namespace Calc_IVT142.Tests.OneArg
         {
             ICalculateFunc calculateFunc = OneArgumentCalculatorsFactory.CreateCalculator(name);
             Assert.IsInstanceOf(type, calculateFunc);
-        } 
+        }
     }
 }

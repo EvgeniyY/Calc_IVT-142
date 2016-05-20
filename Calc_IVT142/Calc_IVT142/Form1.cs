@@ -14,21 +14,38 @@ namespace Calc_IVT142
 
         private void Action(object sender, EventArgs e)
         {
-            double firstArg = Convert.ToDouble(Input1.Text);
-            double secondArg = Convert.ToDouble(Input2.Text);
-            double result;
-            ICalculator calculator = TwoArgumentsCalculatorsFactory.CreateCalculator(((Button) sender).Name);
-            result = calculator.Calculate(firstArg, secondArg);
-            Output.Text = result.ToString();
+            try
+            {
+                double firstArg = Convert.ToDouble(Input1.Text);
+                double secondArg = Convert.ToDouble(Input2.Text);
+                double result;
+                ICalculator calculator = TwoArgumentsCalculatorsFactory.CreateCalculator(((Button) sender).Name);
+                result = calculator.Calculate(firstArg, secondArg);
+                Output.Text = result.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void ActionOneArg(object sender, EventArgs e)
         {
-            double firstArg = Convert.ToDouble(Input1.Text);
-            double result;
-            ICalculateFunc calculator = OneArgumentCalculatorsFactory.CreateCalculator(((Button)sender).Name);
-            result = calculator.CalculateFunc(firstArg);
-            Output.Text = result.ToString();
+            try
+            {
+                double firstArg = Convert.ToDouble(Input1.Text);
+                double result;
+                ICalculateFunc calculator = OneArgumentCalculatorsFactory.CreateCalculator(((Button) sender).Name);
+                result = calculator.CalculateFunc(firstArg);
+                Output.Text = result.ToString();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+
+            }
+
         }
 
         private void Output_Click(object sender, EventArgs e)

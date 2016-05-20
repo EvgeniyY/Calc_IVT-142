@@ -10,8 +10,12 @@ namespace Calc_IVT142.OneArg
             /// <summary>
             /// Класс, который считает Cos.
             /// </summary>
-            /// <param name="first"></param>
-            /// <returns></returns>
+            /// <param name="first">
+            /// Аргумент Cos
+            /// </param>
+            /// <returns>
+            /// Результат Cos
+            /// </returns>
             public double CalculateFunc(double first)
             {
                 return Math.Cos(first);

@@ -1,5 +1,6 @@
 ﻿using System;
 using Calc_IVT142.OneArg;
+using Calc_IVT142.TwoArg;
 using NUnit.Framework;
 
 namespace Calc_IVT142.Tests.OneArg
@@ -17,6 +18,6 @@ namespace Calc_IVT142.Tests.OneArg
             double result = calculateFunc.CalculateFunc(first);
             Assert.AreEqual(expected,result,0.000001);
         }
-         
+
     }
 }

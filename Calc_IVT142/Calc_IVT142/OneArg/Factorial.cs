@@ -9,9 +9,11 @@
         /// Класс, который считает Factorial.
         /// </summary>
         /// <param name="first">
-        /// 
+        /// Аргумент Factorial
         /// </param>
-        /// <returns></returns>
+        /// <returns>
+        /// Результат Factorial
+        /// </returns>
         public double CalculateFunc(double first)
         {
             double result = 1;

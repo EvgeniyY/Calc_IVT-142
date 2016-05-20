@@ -10,8 +10,12 @@ namespace Calc_IVT142.OneArg
         /// <summary>
         /// Класс, который считает Acos.
         /// </summary>
-        /// <param name="first"></param>
-        /// <returns></returns>
+        /// <param name="first">
+        /// Аргумент Acos
+        /// </param>
+        /// <returns>
+        /// Результат Acos
+        /// </returns>
         public double CalculateFunc(double first)
         {
             return Math.Acos(first);

@@ -10,8 +10,12 @@ namespace Calc_IVT142.OneArg
         /// <summary>
         /// Класс, который считает Asin.
         /// </summary>
-        /// <param name="first"></param>
-        /// <returns></returns>
+        /// <param name="first">
+        /// Аргумент Asin
+        /// </param>
+        /// <returns>
+        /// Результат Asin
+        /// </returns>
         public double CalculateFunc(double first)
         {
             return Math.Asin(first);

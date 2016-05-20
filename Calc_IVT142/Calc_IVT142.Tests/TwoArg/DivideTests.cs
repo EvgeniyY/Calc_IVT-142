@@ -1,4 +1,5 @@
-﻿using Calc_IVT142.TwoArg;
+﻿using System;
+using Calc_IVT142.TwoArg;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 
@@ -17,6 +18,13 @@ namespace Calc_IVT142.Tests.TwoArg
             var result = calculator.Calculate(first, second);
             Assert.AreEqual(expected, result, 0.0001);
 
+        }
+
+        [Test]
+        public void DivisionByZeroTest()
+        {
+            ICalculator calculator = new Divide();
+            Assert.Throws<Exception>(() => calculator.Calculate(100, 0));
         }
 
     }

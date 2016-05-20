@@ -2,8 +2,20 @@
 
 namespace Calc_IVT142.TwoArg
 {
+    /// <summary>
+    /// Фабрика с двумя аргументами.
+    /// </summary>
     public static class TwoArgumentsCalculatorsFactory
     {
+        /// <summary>
+        /// Создание калькулятора.
+        /// </summary>
+        /// <param name="name">
+        /// Имя калькулятора.
+        /// </param>
+        /// <returns>
+        /// Создание нужного калькулятора.
+        /// </returns>
         public static ICalculator CreateCalculator(string name)
         {
             switch (name)
