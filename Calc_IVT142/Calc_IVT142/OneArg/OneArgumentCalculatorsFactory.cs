@@ -2,7 +2,7 @@
 
 namespace Calc_IVT142.OneArg
 {
-    public class FabricFunc
+    public static class OneArgumentCalculatorsFactory
     {
         public static ICalculateFunc CreateCalculator(string name)
         {

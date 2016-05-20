@@ -51,8 +51,8 @@
     <Compile Include="OneArg\Ctan.cs" />
     <Compile Include="TwoArg\Divide.cs" />
     <Compile Include="OneArg\Exp.cs" />
-    <Compile Include="TwoArg\Fabric.cs" />
-    <Compile Include="OneArg\FabricFunc.cs" />
+    <Compile Include="TwoArg\TwoArgumentsCalculatorsFactory.cs" />
+    <Compile Include="OneArg\OneArgumentCalculatorsFactory.cs" />
     <Compile Include="OneArg\Factorial.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -17,7 +17,7 @@ namespace Calc_IVT142
             double firstArg = Convert.ToDouble(Input1.Text);
             double secondArg = Convert.ToDouble(Input2.Text);
             double result;
-            ICalculator calculator = Fabric.CreateCalculator(((Button) sender).Name);
+            ICalculator calculator = TwoArgumentsCalculatorsFactory.CreateCalculator(((Button) sender).Name);
             result = calculator.Calculate(firstArg, secondArg);
             Output.Text = result.ToString();
         }
@@ -26,7 +26,7 @@ namespace Calc_IVT142
         {
             double firstArg = Convert.ToDouble(Input1.Text);
             double result;
-            ICalculateFunc calculator = FabricFunc.CreateCalculator(((Button)sender).Name);
+            ICalculateFunc calculator = OneArgumentCalculatorsFactory.CreateCalculator(((Button)sender).Name);
             result = calculator.CalculateFunc(firstArg);
             Output.Text = result.ToString();
         }

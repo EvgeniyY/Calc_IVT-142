@@ -2,7 +2,7 @@
 
 namespace Calc_IVT142.TwoArg
 {
-    public static class Fabric
+    public static class TwoArgumentsCalculatorsFactory
     {
         public static ICalculator CreateCalculator(string name)
         {
